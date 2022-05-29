@@ -1,0 +1,28 @@
+* Project Statement
+  We are interested in Chaios and non-linear systems.  
+  We are interested in understandning when a system is acting in a linear regeme verses
+  when it is acting in a non-linear regeme.
+  We are interested in building our own practical insight using anylitical and computationsl stratagees.
+  This will involve reading papers, descussing ideas and wrighting simulations.
+
+* Links
+** Dr Steven L. Brunton
+   - Associote Professor at the University of Washington.
+   - Runs the youtube channel EigenSteve
+     https://www.youtube.com/c/Eigensteve
+   - Runs a website https://www.eigensteve.com/,
+     which seems to have multiple people underhim.
+   - Writen a few Book thats maybe relevant
+     https://www.eigensteve.com/copy-of-publications
+     + Data-Driven Science 
+     + Dynamic Mode Decomposition
+     + ML Control
+   - Writen a bunch of papers
+   - The Vidio that first took my eye
+     https://www.youtube.com/watch?v=NxAn0oglMVw
+
+* Max's TODOS [0/2]
+
+** TODO Watch a bunch of the Brunton vidioes and get some keywords / rough notes out
+
+** TODO Get some overview of chaos theory
