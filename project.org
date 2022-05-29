@@ -19,7 +19,11 @@
      + ML Control
    - Writen a bunch of papers
    - The Vidio that first took my eye
-     https://www.youtube.com/watch?v=NxAn0oglMVw
+     https://www.youtube.com/watch?v=Q8VzAtGGlDQ
+     Understanding Chaotic systems as intermitently forced linear systems
+     useing modern koopman operator theory, and Hankle theory.
+     References this paper:
+     https://arxiv.org/abs/1608.05306
 
 * Max's TODOS [0/2]
 
