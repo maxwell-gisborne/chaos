@@ -23,7 +23,94 @@
      Understanding Chaotic systems as intermitently forced linear systems
      useing modern koopman operator theory, and Hankle theory.
      References this paper:
-     https://arxiv.org/abs/1608.05306
+     https://arxiv.org/abs/1608.05306.pdf
+* Publications
+** HAVOC
+/Brunton et al 2016/
+[[https://arxiv.org/abs/1608.05306.pdf][arxiv.org]]
+*** Abstract
+Understanding the interplay of order and disorder in chaotic systems is a central challenge
+in modern quantitative science. We present a universal, data-driven decomposition of chaos
+as an intermittently forced linear system.
+
+This work combines *Takens’ delay embedding* with
+modern *Koopman operator theory* and *sparse regression* to obtain linear representations of
+strongly nonlinear dynamics.
+
+The result is a decomposition of chaotic dynamics into a linear
+model in the leading delay coordinates with forcing by low energy delay coordinates; we call
+this the *Hankel alternative view of Koopman* (HAVOK) analysis.
+
+This analysis is applied to the canonical Lorenz system, as well as to real-world examples such as the Earth’s magnetic field
+reversal, and data from electrocardiogram, electroencephalogram, and measles outbreaks.
+
+In each case, the forcing statistics are *non-Gaussian*, with long tails corresponding to rare events
+that trigger intermittent switching and bursting phenomena; this forcing is highly predictive,
+providing a *clear signature that precedes these events*.
+
+Moreover, the activity of the forcing signal demarcates large coherent regions of phase space where the dynamics
+are approximately linear from those that are strongly nonlinear.
+
+*** Keywords ideas
+**** Takens' Delay Embedding
+This is fucking magic
+- [[https://www.youtube.com/watch?v=eJB0kxpR4Rk][ytvid: Delay Coordinates by Prof. Liz Bradley]]
+**** Hankel Embeding
+**** Sparse Regression
+**** Koopman Operator Thory
+**** SVD;
+Single Value Decomposition.
+Its like an total matrix has been trunkate the along one axis.
+
+$$ M = U \Sigma V^* $$
+were 
+- $M$ is some $m\times n$ Matrix
+- $U$ is $m \times m$ and Unitary
+- $V$ is $n \times n$ and Unitary
+- $\Sigma$ is $m \times n$ and Rectangular Diagonal
+
+The Corresonding eigen like equation is a relationship
+between two vectors $\vec u\in \mathbb{R}^m$ and $\vec v \in \mathbb{R}^n$,
+and a scailer $\sigma$, such that
+
+$$ M \vec v = \sigma \vec u, \quad\mbox{ and } \quad M^* \vec u = \sigma\vec v $$ 
+
+If degeneracy ocours, in which the two singular values of $M$ are equal,
+then there will be multiple different $\vec v$'s nad $\vec u$'s that solve the same
+equations as above.
+
+*** Summery of HAVOC
+- We take a dynamical system
+- Obtain a single dementional time-series
+- From series we compute a Hankel Matrix
+- We Take the SVD decomposition of the Hankel Matrix
+- We trunkate the modes up to some level
+- This produces the linear system
+- The remaning modes produce a forceing tearm
+- The forcing time-series can be computed given the time series
+- The forceing time-series spikes prior to non-linear behavior.
+
+** Nonlinear Dynamics (G. Datseris & U. Parlitz)
+/Undergrad Level Textbook/
+Code examples riten in Julia, using DynamicalSystems.jl
+[[https://juliadynamics.github.io/DynamicalSystems.jl/dev/#Textbook-with-DynamicalSystems.jl][Textbook]]
+The authoers also recomended some other books 
+
+** Chaos in Dynamics (E. Ott)
+
+** Nonlinear Time Series Analysis (H. Kantz & T.Scheriber)
+
+
+
+
+* Interesting Software
+
+** DynamicalSystems.jl
+[[https://juliadynamics.github.io/DynamicalSystems.jl][DynamicalSystems.jl]]
+
+** InteractiveDynamics.jl
+/Julia Package for studying dynamical systems/
+[[https://juliadynamics.github.io/InteractiveDynamics.jl/dev/][website]]
 
 * Max's TODOS [0/2]
 
