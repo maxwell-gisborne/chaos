@@ -111,9 +111,3 @@ The authoers also recomended some other books
 ** InteractiveDynamics.jl
 /Julia Package for studying dynamical systems/
 [[https://juliadynamics.github.io/InteractiveDynamics.jl/dev/][website]]
-
-* Max's TODOS [0/2]
-
-** TODO Watch a bunch of the Brunton vidioes and get some keywords / rough notes out
-
-** TODO Get some overview of chaos theory
