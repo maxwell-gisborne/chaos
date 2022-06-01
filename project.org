@@ -5,6 +5,16 @@
   We are interested in building our own practical insight using anylitical and computationsl stratagees.
   This will involve reading papers, descussing ideas and wrighting simulations.
 
+* Fundemental Ideas
+
+** Koopman Mechanics
+Any Non-linear system can be understood as a vector in the Hilbert space of all posible observavbles on the system
+where the dynamics of the state vector is a linear operator, called the *Koopman Operator*
+In practice, you pick a basis such as the furia coefficients, but the choice of the basis has important implications.
+
+
+
+
 * Links
 ** Dr Steven L. Brunton
    - Associote Professor at the University of Washington.
@@ -99,7 +109,6 @@ The authoers also recomended some other books
 ** Chaos in Dynamics (E. Ott)
 
 ** Nonlinear Time Series Analysis (H. Kantz & T.Scheriber)
-
 
 
 
