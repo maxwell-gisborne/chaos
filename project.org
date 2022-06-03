@@ -5,37 +5,26 @@
   We are interested in building our own practical insight using anylitical and computationsl stratagees.
   This will involve reading papers, descussing ideas and wrighting simulations.
 
-* Fundemental Ideas
-
-** Koopman Mechanics
-Any Non-linear system can be understood as a vector in the Hilbert space of all posible observavbles on the system
-where the dynamics of the state vector is a linear operator, called the *Koopman Operator*
-In practice, you pick a basis such as the furia coefficients, but the choice of the basis has important implications.
 
 
+* Key Theorem
+** Ergodic Theorem 
+** Luivel  Theorem
+** Hartman-Grobman Theorem
+Found in Poincaré's geometric piture,
+The main streem approach to dynamical systems.
+
+* Thoughts
+** TODO Connection between very simmilar objects
+Theres a vew objects that seem like complet restatments of one another
+ - Poison Bracket,
+ - Hamiltonion,
+ - Liovillian,
+ - Flow Map
 
 
-* Links
-** Dr Steven L. Brunton
-   - Associote Professor at the University of Washington.
-   - Runs the youtube channel EigenSteve
-     https://www.youtube.com/c/Eigensteve
-   - Runs a website https://www.eigensteve.com/,
-     which seems to have multiple people underhim.
-   - Writen a few Book thats maybe relevant
-     https://www.eigensteve.com/copy-of-publications
-     + Data-Driven Science 
-     + Dynamic Mode Decomposition
-     + ML Control
-   - Writen a bunch of papers
-   - The Vidio that first took my eye
-     https://www.youtube.com/watch?v=Q8VzAtGGlDQ
-     Understanding Chaotic systems as intermitently forced linear systems
-     useing modern koopman operator theory, and Hankle theory.
-     References this paper:
-     https://arxiv.org/abs/1608.05306.pdf
 * Publications
-** HAVOC
+** HAVOC (Brunton)
 /Brunton et al 2016/
 [[https://arxiv.org/abs/1608.05306.pdf][arxiv.org]]
 *** Abstract
@@ -110,7 +99,14 @@ The authoers also recomended some other books
 
 ** Nonlinear Time Series Analysis (H. Kantz & T.Scheriber)
 
+** Nonlinear Dynamics: Mathematical and Computational Approaches (2016 Liz Bradley)
+[[https://www.complexityexplorer.org/courses/60-nonlinear-dynamics-mathematical-and-computational-approaches-fall-2016/segments][course page]]
 
+** Nonlinear Dynamics and Chaos (2014 Reading: Strogatz)
+   
+** Notes on KvN (Brunton)
+Reading through this now, makeing some notes in [[notes-on-KvN.org]]
+Just got to 2.2 Koopman mode decomposition and finite representations.
 
 * Interesting Software
 
@@ -120,3 +116,23 @@ The authoers also recomended some other books
 ** InteractiveDynamics.jl
 /Julia Package for studying dynamical systems/
 [[https://juliadynamics.github.io/InteractiveDynamics.jl/dev/][website]]
+
+* Links
+** Dr Steven L. Brunton
+   - Associote Professor at the University of Washington.
+   - Runs the youtube channel EigenSteve
+     https://www.youtube.com/c/Eigensteve
+   - Runs a website https://www.eigensteve.com/,
+     which seems to have multiple people underhim.
+   - Writen a few Book thats maybe relevant
+     https://www.eigensteve.com/copy-of-publications
+     + Data-Driven Science 
+     + Dynamic Mode Decomposition
+     + ML Control
+   - Writen a bunch of papers
+   - The Vidio that first took my eye
+     https://www.youtube.com/watch?v=Q8VzAtGGlDQ
+     Understanding Chaotic systems as intermitently forced linear systems
+     useing modern koopman operator theory, and Hankle theory.
+     References this paper:
+     https://arxiv.org/abs/1608.05306.pdf

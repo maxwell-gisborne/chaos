@@ -1,0 +1,150 @@
+#+title: Notes KvN 
+
+* Flow Map
+Deffinition of the *flow map* $F_t$
+ for a system with state $x(t)$ obaying $\dot x = \vec f(x)$
+ is
+ \begin{equation}\label{flow-map-definition}
+F_t(x(t_0)) = x(t_0) + \int_{t_0}^{t_0+t} f(x(\tau))d\tau
+\end{equation}
+
+* Linearity
+Linearity is interesting becaues it allows degrees of freedom
+to be decopled, via the spectral decomposition.
+
+* The Geometric Perspective
+Poincaré's geometric perspective treates nonlinear dynamics as
+localy linear.
+Key Theorem: Hartman-Grobman.
+The approch give quantatative results localy 
+but the global behavior is not quantatative.
+
+* Koopman-Von Neumann Classical Mechanics (KVN Mechanics)
+We treat classical systems like the quantum mechanical.
+
+#+begin_quote wikepedia
+As Koopman and von Neumann demonstrated, a Hilbert space of complex,
+square-integrable wavefunctions can be defined
+in which classical mechanics can be formulated as an operatorial theory
+similar to quantum mechanics.
+#+end_quote
+
+
+#+begin_quote Steven L. Brunton notes on koopman
+In 1931, Bernard O. Koopman demonstrated that it is possible to represent a nonlinear dynamical system in
+terms of an infinite-dimensional linear operator acting on a Hilbert space of measure-
+ment functions of the state of the system
+#+end_quote
+
+we postulate that the density in phase space of a system can be exspressed
+as the amplitude of a wave-function $\psi(x,p,t)$
+\begin{equation}
+\rho(x,p,t) = \psi^*\psi
+\end{equation}
+The density obayes the Liouvill equation if the wavefunction obays the liovill equation
+\begin{equation}
+\hat L \psi = i\partial_t \psi
+\end{equation}
+
+*note* there is a relativistic generalization of the KvN mechanics.
+
+
+Consider the set of all real-valued measurement functions /(observables)/ 
+on a system $M$
+\begin{equation}
+g : M \to \mathbb{R}
+\end{equation}
+These observables form a Hilbert Space; The Lebesgue square-integrable functions on $M$.
+
+The koopman oprator $K$ takes an obervable and applies it after evolving the system for a time inteval $t$ is defined as
+\begin{equation}
+K_t g = g\circ F_t 
+\end{equation}
+
+or in descreet time
+\begin{equation}
+K_{\Delta t} g(x_k} = g(x_{k+1})
+\end{equation}
+
+
+Koopman is linear
+\begin{align*}
+K_t(\alpha g(x(\tau)) + \beta h(x(\tau))) &= (\alpha g(-) + \beta h(-)) \circ F_t(x(\tau))
+\\&= \alpha g(x(t+\tau)) + \beta h(x(t+\tau))
+\\&= \alpha K_t g(x(t)) + \beta K_t h(x(t))
+\end{align*}
+
+or in continiouse time for sufficiently smooth dynamical systems
+\begin{equation}
+Kg = \frac{d g}{dt}
+\end{equation}
+ie 
+\begin{equation}
+Kg = \lim_{t\to0} \frac{K_t g - g}{t} = \lim_{t\to0}\frac{g\circ F_t -g}{t}
+\end{equation}
+
+There for the eigen functions obay the PDE
+\begin{equation}
+\nabla \varphi(x) \cdot \dot x = \nabla\varphi(x) \cdot  f(x)
+\end{equation}
+
+Noether's theorem implies that any symetry in the governing equations
+gives ries to a new Koopman eigenfunction with $\lambda=0$
+
+For a conservative system, the Hamiltonion eigen function is a koopman eigenfunction.
+So is the trivial observable $\varphi(x) \equiv 1$
+
+koopman eigen functions are closed under multiplication
+\begin{align}
+ K(\varphi_1 \varphi_2) &= (\lambda_1 + \lambda_2) \varphi_1 \varphi_2 \\
+ K_t(\varphi_1 \varphi_2) &= \lambda_1 \lambda_2 \varphi_1 \varphi_2
+\end{align}
+
+Thus Koopman eigenfunctions establish a comutative monoid under point-wise multipliation.
+This opens the door for a finite number of generators for the coopman eigenfunctions,
+depending on weather the monoid also forms a group.
+
+Descreet time $t$ eigen value functions are just the exponential of the continouse time eigen values 
+
+
+** Eigen values of the coopman
+
+In Descreet time
+\begin{equation}
+K_t \varphi(x_k) = \varphi_{k+1} = \lambda\varphi(x_k)
+\end{equation}
+
+In Continuose time
+\begin{equation}
+K\varphi(x) = \frac{d\varphi}{dt} = \lambda \varphi
+\end{equation}
+
+Coopman Eigen values are observables that change linearly with time.
+
+* Ergodic Theory
+
+* Liouville's Theorum 
+For the density of a statistical system in phase space $\rho$
+\begin{equation}\label{Liouvillian; Poisson Bracket}
+\frac{\partial\rho}{\partial t} = \{H,\rho\}
+\end{equation}
+With the Liouvillian defined as
+\begin{equation}\label{The Liouvillian}
+\hat L = i\{H,\circ\}
+\end{equation}
+the Theorum reads
+\begin{equation}\label{liovillian theorum}
+\dot\rho + i\hat L\rho = 0
+\end{equation}
+ie
+\begin{equation}
+\hat L \rho = i\partial_t \rho
+\end{equation}
+were
+\begin{equation}\label{Poisson Bracket}
+\{A,B\} = \sum_i^n \left[ \frac{\partial A}{\partial q_i}\frac{\partial B}{\partial p_i} - \frac{\partial B}{\partial q_i}\frac{\partial A}{\partial p_i} \right]
+\end{equation}
+for $n$ connonical coordinates $p_i$ and $q_i$ 
+
+
+
