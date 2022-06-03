@@ -5,8 +5,6 @@
   We are interested in building our own practical insight using anylitical and computationsl stratagees.
   This will involve reading papers, descussing ideas and wrighting simulations.
 
-
-
 * Key Theorem
 ** Ergodic Theorem 
 ** Luivel  Theorem
@@ -15,6 +13,11 @@ Found in Poincaré's geometric piture,
 The main streem approach to dynamical systems.
 
 * Thoughts
+
+** Reletivistic Formulation of KvN mechanics
+Appraently you need dirac spinners
+Also there is an interesting papper on einstines equivelance principle in KvN
+
 ** TODO Connection between very simmilar objects
 Theres a vew objects that seem like complet restatments of one another
  - Poison Bracket,
@@ -96,17 +99,16 @@ Code examples riten in Julia, using DynamicalSystems.jl
 The authoers also recomended some other books 
 
 ** Chaos in Dynamics (E. Ott)
-
 ** Nonlinear Time Series Analysis (H. Kantz & T.Scheriber)
-
 ** Nonlinear Dynamics: Mathematical and Computational Approaches (2016 Liz Bradley)
 [[https://www.complexityexplorer.org/courses/60-nonlinear-dynamics-mathematical-and-computational-approaches-fall-2016/segments][course page]]
 
 ** Nonlinear Dynamics and Chaos (2014 Reading: Strogatz)
-   
 ** Notes on KvN (Brunton)
 Reading through this now, makeing some notes in [[notes-on-KvN.org]]
 Just got to 2.2 Koopman mode decomposition and finite representations.
+** Free fall in KvN mechanics and Einstein’s principle of equivalence
+[[https://www.sciencedirect.com/science/article/pii/S0003491620302360?via%3Dihubhttps://www.sciencedirect.com/science/article/pii/S0003491620302360?via%3Dihub][ScienceDirect link]]
 
 * Interesting Software
 
